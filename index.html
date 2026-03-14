@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello Web - 单页示例</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f3f6fb;
+      font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+    }
+
+    .page {
+      text-align: center;
+      padding: 24px;
+    }
+
+    .title {
+      margin: 0 0 24px;
+      font-size: 64px;
+      line-height: 1.15;
+      color: #1f2937;
+    }
+
+    .test-btn {
+      border: none;
+      border-radius: 10px;
+      padding: 14px 28px;
+      font-size: 20px;
+      font-weight: 600;
+      color: #ffffff;
+      background: #2563eb;
+      cursor: pointer;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+
+    .test-btn:hover {
+      background: #1d4ed8;
+    }
+
+    .test-btn:active {
+      transform: translateY(1px);
+    }
+
+    @media (max-width: 640px) {
+      .title {
+        font-size: 44px;
+      }
+
+      .test-btn {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <h1 class="title">Hello Web!</h1>
+    <button id="testBtn" class="test-btn" type="button">点击测试</button>
+  </main>
+
+  <script>
+    (function () {
+      var button = document.getElementById('testBtn');
+      button.addEventListener('click', function () {
+        alert('成功！网页运行正常！');
+      });
+    })();
+  </script>
+</body>
+</html>
