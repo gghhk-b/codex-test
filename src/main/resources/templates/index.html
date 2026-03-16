@@ -1,12 +1,50 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Spring Boot</title>
+    <title>Spring Boot + Thymeleaf 首页</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Microsoft YaHei", sans-serif;
+            background: linear-gradient(135deg, #e0f2fe, #f0f9ff);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card {
+            background: #ffffff;
+            width: 90%;
+            max-width: 620px;
+            border-radius: 16px;
+            padding: 28px;
+            box-shadow: 0 10px 30px rgba(14, 116, 144, 0.15);
+            text-align: center;
+        }
+        h1 {
+            color: #0f172a;
+            margin-bottom: 12px;
+        }
+        p {
+            color: #334155;
+            line-height: 1.8;
+            margin: 8px 0;
+        }
+        .tip {
+            margin-top: 12px;
+            color: #0369a1;
+            font-weight: 600;
+        }
+    </style>
 </head>
 <body>
-<h1>Hello Spring Boot!</h1>
-<p>Current time: <span th:text="${currentTime}">2026-01-01 00:00:00</span></p>
+<div class="card">
+    <h1>你好，Spring Boot！</h1>
+    <p>你现在看到的是一个真实的 <code>index.html</code> 文件。</p>
+    <p>它位于 <code>src/main/resources/templates</code> 目录中。</p>
+    <p class="tip" th:text="${message}">页面动态提示消息</p>
+</div>
 </body>
 </html>

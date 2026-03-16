@@ -14,17 +14,21 @@
     <artifactId>demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>demo</name>
-    <description>Minimal Spring Boot Web MVP</description>
+    <description>Spring Boot Thymeleaf Demo</description>
 
     <properties>
+        <!-- Spring Boot 3.x 需要 JDK 17+ -->
         <java.version>17</java.version>
     </properties>
 
     <dependencies>
+        <!-- Web 开发核心依赖：Spring MVC + 内嵌 Tomcat -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <!-- 模板引擎依赖：将 Controller 返回的视图名映射到 templates 下的 HTML 文件 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
