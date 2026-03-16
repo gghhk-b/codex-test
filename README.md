@@ -1,4 +1,4 @@
-# Spring Boot 3.x + Maven + Thymeleaf 入门教程（真实 HTML 文件版）
+# Spring Boot 3.x + Maven + Thymeleaf 
 
 > 目标：让你像“搭积木”一样，一步步创建一个可运行的 Spring Boot Web 项目，并在浏览器看到真实页面，而不是返回字符串。
 
